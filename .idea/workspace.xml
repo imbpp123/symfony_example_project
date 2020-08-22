@@ -19,8 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7003aff4-54f5-44d2-8c92-94581eae9de1" name="Default Changelist" comment="Symfony files">
+    <list default="true" id="7003aff4-54f5-44d2-8c92-94581eae9de1" name="Default Changelist" comment="Doctrine files">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
@@ -71,6 +72,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -113,7 +115,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598108103375</updated>
-      <workItem from="1598108105625" duration="2235000" />
+      <workItem from="1598108105625" duration="3096000" />
     </task>
     <task id="LOCAL-00001" summary="Docker files">
       <created>1598109892472</created>
@@ -129,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598109931037</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Doctrine files">
+      <created>1598110463451</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598110463451</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,12 +158,25 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Docker files" />
     <MESSAGE value="Symfony files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Symfony files" />
+    <MESSAGE value="Doctrine files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Doctrine files" />
   </component>
   <component name="WindowStateProjectService">
     <state x="359" y="-927" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598108882616">
       <screen x="-586" y="-1440" width="2560" height="1440" />
     </state>
     <state x="359" y="-927" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/-586.-1440.2560.1440@-586.-1440.2560.1440" timestamp="1598108882616" />
+    <state x="297" y="-1021" key="NewPhpClassDialog" timestamp="1598110506102">
+      <screen x="-586" y="-1440" width="2560" height="1440" />
+    </state>
+    <state x="297" y="-1021" key="NewPhpClassDialog/0.0.1440.900/-586.-1440.2560.1440@-586.-1440.2560.1440" timestamp="1598110506102" />
+    <state x="86" y="-1169" key="SettingsEditor" timestamp="1598110757260">
+      <screen x="-586" y="-1440" width="2560" height="1440" />
+    </state>
+    <state x="86" y="-1169" key="SettingsEditor/0.0.1440.900/-586.-1440.2560.1440@-586.-1440.2560.1440" timestamp="1598110757260" />
+    <state x="194" y="-1041" key="Vcs.Push.Dialog.v2" timestamp="1598110465054">
+      <screen x="-586" y="-1440" width="2560" height="1440" />
+    </state>
+    <state x="194" y="-1041" key="Vcs.Push.Dialog.v2/0.0.1440.900/-586.-1440.2560.1440@-586.-1440.2560.1440" timestamp="1598110465054" />
   </component>
 </project>
