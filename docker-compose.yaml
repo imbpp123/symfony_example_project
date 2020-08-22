@@ -1,0 +1,47 @@
+version: '3'
+services:
+
+    mysql:
+        container_name: symfony_test_mysql
+        image: mysql:5.7
+        restart: always
+        environment:
+            MYSQL_DATABASE: 'test_db'
+            MYSQL_USER: 'user'
+            MYSQL_PASSWORD: 'password'
+            MYSQL_ROOT_PASSWORD: 'password'
+        networks:
+            - symfony-test-tier
+
+    nginx:
+        container_name: symfony_test_nginx
+        image: nginx:latest
+        ports:
+            - "80:80"
+        depends_on:
+            - php-fpm
+        networks:
+            - symfony-test-tier
+        volumes:
+            - ./:/var/www
+            - ./docker/nginx/conf.d:/etc/nginx/conf.d
+
+    php-fpm:
+        container_name: symfony_test_php
+        build:
+            context: ./
+            dockerfile: docker/php-fpm/Dockerfile
+        environment:
+            XDEBUG_CONFIG: "remote_enable=1 remote_autostart=0 remote_port=9100 remote_connect_back=0 remote_host=host.docker.internal idekey=PHPSTORM"
+            PHP_IDE_CONFIG: "serverName=symfony-test"
+        depends_on:
+            - mysql
+        networks:
+            - symfony-test-tier
+        volumes:
+            - ./:/var/www
+            - ~/.composer:/root/.composer
+
+networks:
+    symfony-test-tier:
+        driver: bridge
